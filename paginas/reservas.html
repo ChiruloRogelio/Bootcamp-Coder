@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación de Restaurante</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../archivos/cuchara-y-tenedor.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-reservas">
+    <div class="reservation-form">
+        <h2>Reservación de Restaurante</h2>
+        <form action="#" method="post">
+            <label for="adults">Número de adultos:</label>
+            <input type="number" id="adults" name="adults" min="1" required>
+
+            <label for="children">Número de niños:</label>
+            <input type="number" id="children" name="children" min="0" required>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="seating">Preferencia de mesa:</label>
+            <select id="seating" name="seating" required>
+                <option value="inside">Adentro</option>
+                <option value="outside">Afuera</option>
+            </select>
+
+            <label for="comments">Especificaciones adicionales:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <div class="button-container">
+                <input type="submit" value="Reservar">
+                <a href="../index.html" class="home-button">Inicio</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

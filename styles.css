@@ -15,7 +15,9 @@ body {
     height: 69px;
 }
 
-
+.border {
+    border: solid 1px black;
+}
 
 #grid-estructural {
 
@@ -50,14 +52,11 @@ header {
     width: 100%;
     background-color: #fff;
     z-index: 1000;
-
-
 }
 
 nav {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
-    margin-right: 50px;
 }
 
 nav ul {
@@ -96,7 +95,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     display: none;
     position: absolute;
-    right: 6%;
+    right: 7%;
     bottom: 30%;
 }
 
@@ -105,7 +104,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     display: none;
     position: absolute;
-    right: 6%;
+    right: 7%;
     bottom: 30%;
 }
 
@@ -152,15 +151,14 @@ nav ul li a:hover::after {
         height: 17.7rem;
     }
 
-
+    p {
+        font-size: 0.9vw;
+    }
 
     button.btn-nueva-carta {
         margin-top: 5.625vw;
-        /* height: 1.875vw;
-            width: 10.625vw; */
-
-        height: clamp(2.5rem, 1.875vw, 2.5vw);
-        width: clamp(9rem, 10.625vw, 10.625vw);
+        height: 1.875vw;
+        width: 10.625vw;
         border-radius: 5px;
         background-color: #D03333;
         border: none;
@@ -170,96 +168,10 @@ nav ul li a:hover::after {
         text-decoration: none;
         font-weight: bold;
         font-family: 'Roboto Slab', sans-serif;
-        font-size: clamp(1rem, 1vw, 1vw);
+        font-size: 1vw;
         text-decoration: none;
         color: #FFFFFF;
     }
-
-    .titulo-principal {
-        font-size: 48px;
-    }
-
-    .font-size-64px {
-        font-size: 32px;
-    }
-
-    .font-size-54px {
-        font-size: 27px;
-    }
-
-    .font-size-16px {
-        font-size: 12px;
-    }
-
-    .btn-nueva-carta {
-        font-size: 14px;
-    }
-
-
-
-
-    #grid-estructural {
-        row-gap: 50px;
-    }
-
-    .acerca-de-nosotros {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-acerca {
-        width: 90%;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .container-img img {
-        width: 100%;
-        height: auto;
-        margin: 5px 0;
-    }
-
-    /* .containerMenu,
-    .containerimgequipo,
-    .containergaleria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
-
-    /* .card-menu,
-    .card-equipo,
-    .card-galeria {
-        width: 90%;
-        margin-bottom: 20px;
-    } */
-
-
-    nav ul li a {
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-
-    #icono-menu,
-    #icono-close {
-        font-size: 2rem;
-    }
-
-
-    .btn-seleccion-menu .tiposDeMenu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn-seleccion-menu .tiposDeMenu p {
-        font-size: 1rem;
-    }
-
-    .btn-nueva-carta {
-        padding: 10px 20px;
-    }
-
 
 }
 
@@ -276,7 +188,6 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 20px 0px 20px;
 
 }
 
@@ -284,8 +195,7 @@ nav ul li a:hover::after {
 
     font-family: 'Rochester', cursive;
     color: #000000;
-    font-size: clamp(3rem, 9vw, 10vw);
-
+    font-size: 9vw;
 }
 
 
@@ -307,8 +217,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Roboto Slab', sans-serif;
-
-    font-size: clamp(1rem, 1.37vw, 1.37vw);
+    font-size: 1.37vw;
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -318,11 +227,11 @@ nav ul li a:hover::after {
 }
 
 .font-size-96px {
-    font-size: clamp(6rem, 4vw, 6vw);
+    font-size: 6vw;
 }
 
 .font-size-54px {
-    font-size: clamp(3rem, 3vw, 3vw);
+    font-size: 3.37vw;
 }
 
 
@@ -349,15 +258,15 @@ nav ul li a:hover::after {
 }
 
 .font-size-64px {
-    font-size: clamp(3rem, 4vw, 4vw);
+    font-size: 4vw;
 }
 
 .font-size-24px {
-    font-size: clamp(1rem, 1.5vw, 1.5vw);
+    font-size: 1.5vw;
 }
 
 .font-size-16px {
-    font-size: clamp(1rem, 1vw, 1vw);
+    font-size: 1vw;
 }
 
 .roboto-flex {
@@ -407,9 +316,6 @@ nav ul li a:hover::after {
     grid-template-rows: auto 1fr;
     gap: 15px;
     margin: 10px;
-    justify-content: center;
-    justify-items: center;
-    min-width: 400px;
 
 }
 
@@ -538,7 +444,7 @@ nav ul li a:hover::after {
     grid-area: nuestro-equipo;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     gap: 30px;
 }
 
@@ -561,10 +467,7 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(486px, 1fr));
     grid-template-rows: auto 1fr;
     gap: 15px;
-    /* margin: 10px; */
-    justify-content: center;
-    justify-items: center;
-    min-width: 400px;
+    margin: 10px;
 }
 
 .imgcontainer {
@@ -606,16 +509,16 @@ nav ul li a:hover::after {
 
 .containergaleria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: auto 1fr;
     gap: 15px;
     width: 100%;
-    margin-bottom: 15px;
 }
 
 .card-galeria {
     height: 400px;
-    padding: 13px;
+    background-color: #D03333;
+
 }
 
 .card-galeria img {
@@ -693,6 +596,262 @@ nav ul li a:hover::after {
 
 .social-icon img:hover {
     transform: scale(1.2);
+}
+
+/* #endregion */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #region Contactos */
+
+
+/* Agrego un imagen en todo la pagina y asigno los estilos en general para centrar el formulario en la pantalla */
+.body-contactos {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/img/Acerca\ de.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+/* Asigno el tamano para el div principal que hara de marco en el form */
+
+.reservation-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Asigno estilos a los controles dentro del div principal */
+.reservation-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.reservation-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservation-form input[type="submit"],
+.reservation-form .home-button {
+    background-color: #D03333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 4px;
+    width: calc(50% - 10px);
+}
+
+.reservation-form input[type="submit"]:hover,
+.reservation-form .home-button:hover {
+    background-color: #D03333;
+}
+
+.reservation-form .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #endregion */
+
+
+/* #region Precios */
+.divcontainer {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 20px;
+    color: #666;
+}
+
+.price {
+    font-size: 18px;
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fontlyli {
+    font-family: "Lily Script One", system-ui;
+    font-style: normal;
+    font-size: 64px;
+    color: #D03333;
+}
+
+a {
+    text-decoration: none;
+    color: #D03333;
+}
+
+a:hover {
+
+    color: black;
+}
+
+.lobsterTwo {
+    font-family: "Lobster Two", sans-serif;
+}
+
+
+/* #endregion */
+
+
+
+
+
+
+
+
+
+/* #region Reservas */
+
+/* Agrego un imagen en todo la pagina y asigno los estilos en general para centrar el formulario en la pantalla */
+.body-reservas {
+    font-family: 'Roboto', sans-serif;
+    /* Reemplaza esta URL con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-blend-mode: darken;
+}
+
+/* Asigno el tamano para el div principal que hara de marco en el form */
+.reservation-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Asigno estilos a los controles dentro del div principal */
+.reservation-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.reservation-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservation-form input[type="submit"],
+.reservation-form .home-button {
+    background-color: #D03333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 4px;
+    width: calc(50% - 10px);
+}
+
+.reservation-form input[type="submit"]:hover,
+.reservation-form .home-button:hover {
+    background-color: #D03333;
+}
+
+.reservation-form .button-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* #endregion */
