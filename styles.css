@@ -96,7 +96,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     display: none;
     position: absolute;
-    right: 2%;
+    right: 6%;
     bottom: 30%;
 }
 
@@ -105,7 +105,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     display: none;
     position: absolute;
-    right: 2%;
+    right: 6%;
     bottom: 30%;
 }
 
@@ -157,7 +157,7 @@ nav ul li a:hover::after {
     button.btn-nueva-carta {
         margin-top: 5.625vw;
         /* height: 1.875vw;
-        width: 10.625vw; */
+            width: 10.625vw; */
 
         height: clamp(2.5rem, 1.875vw, 2.5vw);
         width: clamp(9rem, 10.625vw, 10.625vw);
@@ -173,6 +173,91 @@ nav ul li a:hover::after {
         font-size: clamp(1rem, 1vw, 1vw);
         text-decoration: none;
         color: #FFFFFF;
+    }
+
+    .titulo-principal {
+        font-size: 48px;
+    }
+
+    .font-size-64px {
+        font-size: 32px;
+    }
+
+    .font-size-54px {
+        font-size: 27px;
+    }
+
+    .font-size-16px {
+        font-size: 12px;
+    }
+
+    .btn-nueva-carta {
+        font-size: 14px;
+    }
+
+
+
+
+    #grid-estructural {
+        row-gap: 50px;
+    }
+
+    .acerca-de-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-acerca {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .container-img img {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    /* .containerMenu,
+    .containerimgequipo,
+    .containergaleria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    /* .card-menu,
+    .card-equipo,
+    .card-galeria {
+        width: 90%;
+        margin-bottom: 20px;
+    } */
+
+
+    nav ul li a {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #icono-menu,
+    #icono-close {
+        font-size: 2rem;
+    }
+
+
+    .btn-seleccion-menu .tiposDeMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-seleccion-menu .tiposDeMenu p {
+        font-size: 1rem;
+    }
+
+    .btn-nueva-carta {
+        padding: 10px 20px;
     }
 
 
@@ -521,7 +606,7 @@ nav ul li a:hover::after {
 
 .containergaleria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-template-rows: auto 1fr;
     gap: 15px;
     width: 100%;
@@ -530,8 +615,7 @@ nav ul li a:hover::after {
 
 .card-galeria {
     height: 400px;
-    background-color: #D03333;
-
+    padding: 13px;
 }
 
 .card-galeria img {
