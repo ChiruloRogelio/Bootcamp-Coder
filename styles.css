@@ -148,7 +148,7 @@ nav ul li a:hover::after {
 
     #checkboxmenu:checked~nav ul {
         background-color: rgb(163, 163, 163);
-        height: 17.7rem;
+        height: 20.7rem;
     }
 
     p {
@@ -306,12 +306,13 @@ nav ul li a:hover::after {
 
 #seccion-especial-del-dia {
     grid-area: seccion-especial-del-dia;
-    width: 87%;
+    width: 100%;
 }
 
 
 .container-img {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
     grid-template-rows: auto 1fr;
     gap: 15px;
@@ -363,16 +364,19 @@ nav ul li a:hover::after {
 }
 
 .tiposDeMenuSeleccionado {
-    width: 17.3125vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: clamp(7.3125vw, 17.3125vw, 17.3125vw);
     height: 8.75vw;
     background-color: #D03333;
+
 }
 
 .menu-seleccionado {
     color: #FFFFFF;
     display: inline;
     border-bottom: solid;
-    padding-bottom: 2px;
+    margin: 10px;
 }
 
 .menu-no-seleccionado {
@@ -380,12 +384,14 @@ nav ul li a:hover::after {
     color: black;
     display: inline;
     border-bottom: solid;
-    padding-bottom: 2px;
+    margin: 10px;
     border-color: #A8A8A8;
 }
 
 .tiposDeMenu {
-    width: 17.3125vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: clamp(7.3125vw, 17.3125vw, 17.3125vw);
     height: 8.75vw;
     background-color: #D9D9D9;
 }
@@ -417,9 +423,6 @@ nav ul li a:hover::after {
 
 .card-menu {
     display: flex;
-    width: 500px;
-    height: 100%;
-    align-items: center;
 }
 
 .card-menu img {
@@ -443,8 +446,8 @@ nav ul li a:hover::after {
 #nuestro-equipo {
     grid-area: nuestro-equipo;
     align-items: center;
-    justify-content: center;
-    width: 90%;
+    justify-items: center;
+    width: 100%;
     gap: 30px;
 }
 
@@ -464,6 +467,7 @@ nav ul li a:hover::after {
 
 .containerimgequipo {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(486px, 1fr));
     grid-template-rows: auto 1fr;
     gap: 15px;
@@ -502,6 +506,7 @@ nav ul li a:hover::after {
 
 #seccion-galeria {
     grid-area: seccion-galeria;
+    justify-items: center;
     width: 100%;
     gap: 30px;
 }
@@ -512,13 +517,11 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: auto 1fr;
     gap: 15px;
-    width: 100%;
 }
 
 .card-galeria {
     height: 400px;
-    background-color: #D03333;
-
+    padding: 2px;
 }
 
 .card-galeria img {
