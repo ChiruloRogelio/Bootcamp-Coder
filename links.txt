@@ -1,1 +1,3 @@
-https://docs.google.com/document/d/1nFGT4ul-P1gYCRTeCO-mQyNZ4sgJ6oFpPpXXj5V973A/edit
+Link de la pagina en la cual se puede visualizar el proyecto: https://chirulorogelio.github.io/Bootcamp-Coder/
+Lin de GitHub: https://github.com/ChiruloRogelio/Bootcamp-Coder
+
