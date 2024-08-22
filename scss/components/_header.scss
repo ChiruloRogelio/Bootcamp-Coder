@@ -1,0 +1,87 @@
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-fondo;
+    z-index: 1000;
+
+    .logo {
+        left: 220;
+        width: 80px;
+        height: 69px;
+    }
+
+    #checkboxmenu {
+        display: none;
+    }
+
+    .iconos-menu {
+        align-content: center;
+    }
+
+    #icono-menu {
+        font-size: 2.8rem;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        right: 7%;
+        bottom: 30%;
+    }
+
+    #icono-close {
+        font-size: 2.8rem;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        right: 7%;
+        bottom: 30%;
+    }
+
+
+    nav {
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: flex;
+
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000000;
+        padding: 0.5rem 0.8rem;
+        display: inline-block;
+
+
+        /* Se crea una linea con un ancho de 0 en 'after' para luego cargarla en el evento hover */
+        &:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: $color-naranja;
+            transition: width 0.3s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+    }
+
+
+
+
+
+}

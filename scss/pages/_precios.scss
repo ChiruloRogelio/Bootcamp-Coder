@@ -1,0 +1,73 @@
+/* #region Precios */
+.divcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 0fr));
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    background-color: $color-fondo;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 20px;
+    color: $color-gris-oscuro;
+}
+
+.price {
+    font-size: 18px;
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fontlyli {
+    font-family: "Lily Script One", system-ui;
+    font-style: normal;
+    font-size: 64px;
+    color: $color-naranja;
+}
+
+a {
+    text-decoration: none;
+    color: $color-naranja;
+}
+
+a:hover {
+
+    color: black;
+}
+
+.volver-inicio {
+    display: grid;
+    justify-items: center;
+}
+
+/* #endregion */

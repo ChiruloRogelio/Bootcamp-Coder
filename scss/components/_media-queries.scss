@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+    header {
+
+        /* Al tener la resolucion menor a '768' aplico estilos para el NavBar  */
+        #icono-menu {
+            display: block;
+        }
+
+        nav ul {
+            /* Se modela el tamano del menu para dispositivos mas chicos */
+            display: block;
+            text-align: center;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: .3s ease;
+        }
+
+
+        /* Al hacer click hago acciones necesarias para mostrar el nuevo menu reducido. */
+        #checkboxmenu:checked~.iconos-menu #icono-menu {
+            display: none;
+        }
+
+        #checkboxmenu:checked~.iconos-menu #icono-close {
+            display: block;
+        }
+
+        #checkboxmenu:checked~nav ul {
+            background-color: rgb(163, 163, 163);
+            height: 20.7rem;
+        }
+
+        p {
+            font-size: 0.9vw;
+        }
+
+        button.btn-nueva-carta {
+            margin-top: 5.625vw;
+            height: 1.875vw;
+            width: 10.625vw;
+            border-radius: 5px;
+            background-color: #D03333;
+            border: none;
+        }
+
+        span.fuente-negrita {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 1vw;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    }
+}

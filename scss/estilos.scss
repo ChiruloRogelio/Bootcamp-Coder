@@ -1,0 +1,35 @@
+@import "./utilities/reset";
+
+@import "./utilities/variables";
+
+@import "./utilities/mixin";
+@import "./utilities/extend";
+
+
+
+@import "./components/header";
+@import "./components/footer";
+
+
+
+@import "./pages/main-index";
+@import "./pages/contactos";
+@import "./pages/precios";
+@import "./pages/reservas";
+
+
+
+@import "./utilities/global";
+
+
+
+
+
+
+@import "./components/media-queries";
+
+/* VARIABLES en SASS => Comienzan con el signo Peso ($), para utilizarlas tambien comienzan con dicho signo.*/
+$color-rojo: rgb(5, 218, 147);
+
+
+/* ampersam (&) => hace referencia a la etiqueta anterior y se puede utilizar para los eventos por ejemplo: ":hover" */

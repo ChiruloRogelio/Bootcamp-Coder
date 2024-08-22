@@ -1,0 +1,8 @@
+@mixin container-grid($justify, $justify-item, $aling-item) {
+    display: grid;
+    align-items: $aling-item;
+    justify-content: $justify;
+    justify-items: $justify-item;
+    width: 100%;
+
+}

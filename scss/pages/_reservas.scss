@@ -1,0 +1,74 @@
+/* #region Reservas */
+
+/* Agrego un imagen en todo la pagina y asigno los estilos en general para centrar el formulario en la pantalla */
+.body-reservas {
+    font-family: 'Roboto', sans-serif;
+    /* Reemplaza esta URL con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-blend-mode: darken;
+}
+
+/* Asigno el tamano para el div principal que hara de marco en el form */
+.reservation-form {
+    background-color: $color-fondo;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Asigno estilos a los controles dentro del div principal */
+.reservation-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.reservation-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid $color-gris;
+    border-radius: 4px;
+}
+
+.reservation-form input[type="submit"],
+.reservation-form .home-button {
+    background-color: $color-naranja;
+    color: $color-fondo;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 4px;
+    width: calc(50% - 10px);
+}
+
+.reservation-form input[type="submit"]:hover,
+.reservation-form .home-button:hover {
+    background-color: $color-naranja;
+}
+
+.reservation-form .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #endregion */

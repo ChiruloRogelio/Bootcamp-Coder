@@ -9,7 +9,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+
     <link rel="icon" href="./img/cuchara-y-tenedor.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
@@ -26,10 +28,10 @@
 <body>
     <div id="grid-estructural">
         <!-- #region SECCION HEADER  -->
-        <header class="border">
+        <header>
 
             <!-- Logo de la Web -->
-            <a id="aLogo" href="./index.html"><img src="./img/logo.jpg" alt="logo" class="logo"></a>
+            <a href="./index.html"><img src="./img/logo.jpg" alt="logo" class="logo"></a>
 
             <!-- Agrego un check para saber cuando el usuario selecciono el menu -->
             <!-- Agrego la etiqueta 'label' para poder utilizar el checkbox -->
@@ -71,10 +73,12 @@
 
 
         <!-- #region SECCION PRINCIPAL  -->
-        <section id="seccion-principal" class="border">
+        <section id="seccion-principal">
 
             <h1 class="titulo-principal font-size-96px">Comida para comer en <strong
                     class="titulo-principal font-size-96px color-rojo">Familia</strong></h1>
+
+
             <h3 class="titulo-principal  font-size-54px color-rojo">Apariencia Occidental</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor rem nam officia dicta et laboriosam
                 veniam
@@ -89,9 +93,9 @@
 
 
         <!-- #region SECCION ACERCA DE  -->
-        <section id="seccion-acerca-de" class="border">
+        <section id="seccion-acerca-de">
             <div class="centar-acerca">
-                <p class="font-lily-script-one font-size-64px ">Acerca de Nosotros</p>
+                <pre class="font-lily-script-one font-size-64px ">Acerca de Nosotros</pre>
                 <p class="roboto-flex color-black">SUBTITULO DE QUIENES SOMOS</p>
             </div>
 
@@ -141,9 +145,9 @@
 
         <!-- #region SECCION ESPECIAL DEL DIA -->
 
-        <section id="seccion-especial-del-dia" class="border">
+        <section id="seccion-especial-del-dia">
             <div class="container-especial">
-                <p class="font-lily-script-one font-size-64px">Especial del Dia</p>
+                <pre class="font-lily-script-one font-size-64px">Especial del Dia</pre>
                 <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                     natus odio illum
                     sequi rerum temporibus quas? Ratione,
@@ -153,10 +157,10 @@
             </div>
 
             <div class="container-img">
-                <img src="./img/especial-del-dia/Taquillos.jpg" alt="Taquillos">
-                <img src="./img/especial-del-dia/Pata con papas.jpg" alt="Pata con papas">
-                <img src="./img/especial-del-dia/gimme.jpg" alt="Gimme" class="img-especial-del-dia">
-                <img src="./img/especial-del-dia/gimme.jpg" alt="Gimme" class="img-especial-del-dia">
+                <img src="./img/especial-del-dia/Taquillos.jpg" alt="Taquillos" class="animacion">
+                <img src="./img/especial-del-dia/Pata con papas.jpg" alt="Pata con papas" class="animacion">
+                <img src="./img/especial-del-dia/gimme.jpg" alt="Gimme" class="animacion">
+                <img src="./img/especial-del-dia/gimme.jpg" alt="Gimme" class="animacion">
             </div>
             <div class="siguientes-imagenes">
                 <div class="icono-galeria-seleccionado">
@@ -174,9 +178,9 @@
 
 
         <!-- #region SECCION MENU -->
-        <section id="seccion-menu" class="border">
+        <section id="seccion-menu">
             <div class="container-especial">
-                <p class="font-lily-script-one font-size-64px">Otros Menús</p>
+                <pre class="font-lily-script-one font-size-64px">Otros Menús</pre>
                 <p class="roboto-flex font-size-16px texto-menu">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit.
                     Cumque
@@ -280,10 +284,10 @@
 
 
         <!-- #region SECCION NUESTRO EQUIPO -->
-        <section id="nuestro-equipo" class="border">
+        <section id="nuestro-equipo">
 
             <div class="container-especial">
-                <p class="font-lily-script-one font-size-64px">Nuestro Equipo</p>
+                <pre class="font-lily-script-one font-size-64px">Nuestro Equipo</pre>
                 <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                     natus odio illum
                     sequi rerum temporibus quas? Ratione,
@@ -349,9 +353,9 @@
 
 
         <!-- #region SECCION GALERIA -->
-        <section id="seccion-galeria" class="border">
-            <div class="container-galeria">
-                <p class="font-lily-script-one font-size-64px">Galeria</p>
+        <section id="seccion-galeria">
+            <div class="container-especial">
+                <pre class="font-lily-script-one font-size-64px">Galeria</pre>
                 <p class="roboto-flex font-size-16px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                     natus
                     odio illum
