@@ -55,5 +55,82 @@
             text-decoration: none;
             color: #FFFFFF;
         }
+
+
+    }
+
+    #seccion-principal {
+        h1 {
+            font-size: 46px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    #seccion-acerca-de {
+
+
+        pre {
+            font-size: 26px;
+        }
+
+        .acerca-de-nosotros {
+            p {
+                font-size: 11px;
+            }
+        }
+
+        .acerca-de-nosotros {
+            display: grid;
+            justify-items: center;
+        }
+
+
+    }
+
+    #seccion-especial-del-dia {
+        pre {
+            font-size: 26px;
+        }
+
+        .acerca-de-nosotros {
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+
+    #seccion-menu {
+        display: none;
+    }
+
+    #nuestro-equipo {
+        pre {
+            font-size: 26px;
+        }
+
+        .acerca-de-nosotros {
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+
+    #seccion-galeria {
+        pre {
+            font-size: 26px;
+        }
+
+        .acerca-de-nosotros {
+            p {
+                font-size: 11px;
+            }
+        }
     }
 }

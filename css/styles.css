@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-#seccion-principal h3, #seccion-principal h1 {
-  font-family: "Rochester", cursive;
-  color: #000000;
-  font-size: 9vw;
-}
-
-#seccion-galeria pre, #nuestro-equipo pre, #seccion-menu pre, #seccion-especial-del-dia pre, #seccion-acerca-de pre {
-  font-family: "Lily Script One", system-ui;
-  font-style: normal;
-  color: #D03333;
-}
-
-#seccion-galeria p, #nuestro-equipo .containerimgequipo .card-equipo, #nuestro-equipo p, #seccion-menu p, #seccion-especial-del-dia p, #seccion-acerca-de p {
-  font-family: "Roboto Flex", sans-serif;
-  color: rgb(139, 139, 139);
-}
-
 header {
   grid-area: header;
   display: flex;
@@ -110,277 +93,229 @@ header nav ul li a:hover::after {
   transform: scale(1.2);
 }
 
-#seccion-principal {
-  grid-area: seccion-principal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#seccion-principal h1 {
-  font-size: 6vw;
-}
-#seccion-principal h1 strong {
-  color: #D03333;
-}
-#seccion-principal h3 {
-  font-size: 3.37vw;
-  color: #D03333;
-}
-
-/* #region SECCION ACERCA DE */
-#seccion-acerca-de {
-  grid-area: seccion-acerca-de;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-#seccion-acerca-de .centar-acerca {
-  padding-left: 16%;
-}
-#seccion-acerca-de pre {
-  font-size: 4vw;
-}
-#seccion-acerca-de .acerca-de-nosotros {
-  display: flex;
-}
-#seccion-acerca-de .acerca-de-nosotros p {
-  font-size: 1vw;
-  padding-left: 16%;
-  padding-top: 50px;
-}
-#seccion-acerca-de .acerca-de-nosotros .img-acerca {
-  border-radius: 50%;
-  width: 30.875vw;
-  height: 30.875vw;
-  margin: 20px;
-  object-fit: cover;
-}
-
-/* #endregion*/
-/* #region SECCION ESPECIAL DEL DIA */
-#seccion-especial-del-dia {
-  grid-area: seccion-especial-del-dia;
-  width: 100%;
-}
-#seccion-especial-del-dia .container-especial {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-}
-#seccion-especial-del-dia pre {
-  font-size: 4vw;
-}
-#seccion-especial-del-dia .container-img {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
-  grid-template-rows: auto 1fr;
-  gap: 15px;
-  margin: 10px;
-}
-#seccion-especial-del-dia .container-img img {
-  width: 100%;
-  height: 100%;
-  max-height: 450px;
-  max-width: 350px;
-  border-radius: 15px;
-}
-#seccion-especial-del-dia .siguientes-imagenes {
-  display: flex;
-  grid-column: auto;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-}
-#seccion-especial-del-dia .icono-galeria-seleccionado {
-  margin: 2px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #D03333;
-}
-#seccion-especial-del-dia .icono-galeria-seleccionado:hover {
-  cursor: pointer;
-}
-#seccion-especial-del-dia .icono-galeria-no-seleccionado {
-  margin: 2px;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  border: solid 2px;
-  border-color: #D03333;
-}
-#seccion-especial-del-dia .icono-galeria-no-seleccionado:hover {
-  cursor: pointer;
+section {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
 }
 
 /* #endregion */
-/* #region SECCION MENU */
-#seccion-menu {
-  grid-area: seccion-menu;
-  display: grid;
-  gap: 30px;
-}
-#seccion-menu .container-especial {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-}
-#seccion-menu pre {
-  font-size: 4vw;
-}
-#seccion-menu .btn-seleccion-menu {
-  align-items: center;
-  justify-content: center;
+/* #region Contactos */
+/* Agrego un imagen en todo la pagina y asigno los estilos en general para centrar el formulario en la pantalla */
+.body-contactos {
+  font-family: "Roboto", sans-serif;
+  background-image: url("/img/Acerca de.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
 }
-#seccion-menu .tiposDeMenuSeleccionado {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 17.3125vw;
-  height: 8.75vw;
+
+/* Asigno el tamano para el div principal que hara de marco en el form */
+.reservation-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Asigno estilos a los controles dentro del div principal */
+.reservation-form h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.reservation-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reservation-form input[type=submit],
+.reservation-form .home-button {
   background-color: #D03333;
-}
-#seccion-menu .menu-seleccionado {
   color: #fff;
-  display: inline;
-  border-bottom: solid;
-  margin: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 4px;
+  width: calc(50% - 10px);
 }
-#seccion-menu .menu-no-seleccionado {
-  color: black;
-  display: inline;
-  border-bottom: solid;
-  margin: 10px;
-  border-color: #A8A8A8;
+
+.reservation-form input[type=submit]:hover,
+.reservation-form .home-button:hover {
+  background-color: #D03333;
 }
-#seccion-menu .tiposDeMenu {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 17.3125vw;
-  height: 8.75vw;
-  background-color: #D9D9D9;
-}
-#seccion-menu .lobster {
-  font-family: "Lobster", sans-serif;
-}
-#seccion-menu .imgPrecio {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #D9D9D9;
-  margin-left: 30px;
-}
-#seccion-menu .containerMenu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-template-rows: auto 1fr;
-  justify-items: center;
-  gap: 15px;
-}
-#seccion-menu .card-menu {
+
+.reservation-form .button-container {
   display: flex;
-}
-#seccion-menu .card-menu img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: over;
-  margin-right: 6px;
-}
-#seccion-menu .texto-menu {
-  padding: 0px 10% 0 10%;
+  justify-content: space-between;
 }
 
 /* #endregion */
-/* #region SECCION NUESTRO EQUIPO */
-#nuestro-equipo {
-  grid-area: nuestro-equipo;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
-  gap: 30px;
-}
-#nuestro-equipo .container-especial {
+/* #region Precios */
+.divcontainer {
   display: grid;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-}
-#nuestro-equipo pre {
-  font-size: 4vw;
-}
-#nuestro-equipo .containerimgequipo {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(486px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 0fr));
   grid-template-rows: auto 1fr;
-  gap: 15px;
-  margin: 10px;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
 }
-#nuestro-equipo .containerimgequipo .card-equipo {
-  width: 486px;
-  height: 690px;
-  background-color: #D9D9D9;
-}
-#nuestro-equipo .containerimgequipo .card-equipo img {
+
+.container {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 486px;
-  align-items: center;
-  object-fit: cover;
 }
-#nuestro-equipo .containerimgequipo .card-equipo .lobsterTwo {
-  font-family: "Lobster Two", sans-serif;
-  font-weight: 400;
-  font-size: 2.25vw;
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 10px 20px;
+  color: rgb(138, 138, 138);
+}
+
+.price {
+  font-size: 18px;
+  color: #e67e22;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.fontlyli {
+  font-family: "Lily Script One", system-ui;
   font-style: normal;
-  color: #6D6B6B;
-  margin-bottom: 0px;
+  font-size: 64px;
+  color: #D03333;
+}
+
+a {
+  text-decoration: none;
+  color: #D03333;
+}
+
+a:hover {
+  color: black;
+}
+
+.volver-inicio {
+  display: grid;
+  justify-items: center;
 }
 
 /* #endregion */
-/* #region SECCION GALERIA */
-#seccion-galeria {
-  grid-area: seccion-galeria;
-  justify-items: center;
-  width: 100%;
-  gap: 30px;
-}
-#seccion-galeria .container-especial {
-  display: grid;
-  align-items: center;
+/* #region Reservas */
+/* Agrego un imagen en todo la pagina y asigno los estilos en general para centrar el formulario en la pantalla */
+.body-reservas {
+  font-family: "Roboto", sans-serif;
+  /* Reemplaza esta URL con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  background-blend-mode: darken;
+}
+
+/* Asigno el tamano para el div principal que hara de marco en el form */
+.reservation-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Asigno estilos a los controles dentro del div principal */
+.reservation-form h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.reservation-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
   width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
 }
-#seccion-galeria pre {
-  font-size: 4vw;
+
+.reservation-form input[type=submit],
+.reservation-form .home-button {
+  background-color: #D03333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 4px;
+  width: calc(50% - 10px);
 }
-#seccion-galeria .containergaleria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: auto 1fr;
-  gap: 15px;
+
+.reservation-form input[type=submit]:hover,
+.reservation-form .home-button:hover {
+  background-color: #D03333;
 }
-#seccion-galeria .card-galeria {
-  height: 400px;
-  padding: 2px;
-}
-#seccion-galeria .card-galeria img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.reservation-form .button-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* #endregion */

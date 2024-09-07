@@ -138,7 +138,7 @@ header nav ul li a:hover::after {
   justify-content: flex-start;
 }
 #seccion-acerca-de .centar-acerca {
-  padding-left: 16%;
+  padding: 0px 30px 0px 30px;
 }
 #seccion-acerca-de pre {
   font-size: 4vw;
@@ -148,7 +148,6 @@ header nav ul li a:hover::after {
 }
 #seccion-acerca-de .acerca-de-nosotros p {
   font-size: 1vw;
-  padding-left: 16%;
   padding-top: 50px;
 }
 #seccion-acerca-de .acerca-de-nosotros .img-acerca {
@@ -673,6 +672,46 @@ body #grid-estructural {
     font-size: 1vw;
     text-decoration: none;
     color: #FFFFFF;
+  }
+  #seccion-principal h1 {
+    font-size: 46px;
+  }
+  #seccion-principal h3 {
+    font-size: 32px;
+  }
+  #seccion-principal p {
+    font-size: 16px;
+  }
+  #seccion-acerca-de pre {
+    font-size: 26px;
+  }
+  #seccion-acerca-de .acerca-de-nosotros p {
+    font-size: 11px;
+  }
+  #seccion-acerca-de .acerca-de-nosotros {
+    display: grid;
+    justify-items: center;
+  }
+  #seccion-especial-del-dia pre {
+    font-size: 26px;
+  }
+  #seccion-especial-del-dia .acerca-de-nosotros p {
+    font-size: 11px;
+  }
+  #seccion-menu {
+    display: none;
+  }
+  #nuestro-equipo pre {
+    font-size: 26px;
+  }
+  #nuestro-equipo .acerca-de-nosotros p {
+    font-size: 11px;
+  }
+  #seccion-galeria pre {
+    font-size: 26px;
+  }
+  #seccion-galeria .acerca-de-nosotros p {
+    font-size: 11px;
   }
 }
 /* VARIABLES en SASS => Comienzan con el signo Peso ($), para utilizarlas tambien comienzan con dicho signo.*/
